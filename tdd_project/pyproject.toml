@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tdd-project"
+version = "0.1.0"
+description = ""
+authors = ["name = dbengp ; email = dbengp@hotmail.com"]
+
+[tool.poetry.dependencies]
+python = "3.13.*"
+fastapi = "^0.115.14"
+uvicorn = "^0.35.0"
+pydantic = "^2.11.7"
+pydantic-settings = "^2.10.1"
+moto = "^5.1.6"
+pytest = "^8.4.1"
+pytest-asyncio = "^1.0.0"
+pre-commit = "^4.2.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
