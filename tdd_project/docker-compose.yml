@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mongodb:
+         image: "bitnami/mongodb:latest"
+         ports:
+           - "27017:27017"
+         environment:
+           - MONGODB_REPLICA_SET_MODE=primary
+           - MONGODB_ADVERTISED_HOSTNAME=localhost
+           - ALLOW_EMPTY_PASSWORD=yes
+         restart: on-failure
